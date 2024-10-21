@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct CoreDataBootcampApp: App {
-    let persistenceController = PersistenceController.shared
+//    let persistenceController = PersistenceController.shared
+    @StateObject private var vm = CoreDataViewModel()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(vm)
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

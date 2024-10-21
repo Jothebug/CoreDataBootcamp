@@ -18,8 +18,6 @@ class CoreDataViewModel: ObservableObject {
         container.loadPersistentStores { (description, error) in
             if let error = error {
                 print("ERROR LOADING CORE DATA. \(error)")
-            } else {
-                print("Successfully loaded data")
             }
         }
         fetchFruits()
@@ -37,6 +35,23 @@ class CoreDataViewModel: ObservableObject {
     func addFruit(text: String) {
         let newFruit = FruitEntity(context: container.viewContext)
         newFruit.name = text
+        
+        saveData()
+    }
+    
+    func deleteFruit(indexSet: IndexSet) {
+        guard let index = indexSet.first else {return}
+        let entity = savedEntities[index]
+        container.viewContext.delete(entity)
+        
+        saveData()
+    }
+    
+    func updateFruit(fruit: FruitEntity) {
+        let currentName = fruit.name ?? ""
+        let newName = currentName + "!"
+        fruit.name = newName
+        
         saveData()
     }
     
