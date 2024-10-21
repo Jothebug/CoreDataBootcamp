@@ -13,6 +13,7 @@
 		B53402112CC16C3F0057B049 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53402102CC16C3F0057B049 /* Preview Assets.xcassets */; };
 		B53402132CC16C3F0057B049 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53402122CC16C3F0057B049 /* Persistence.swift */; };
 		B53402162CC16C3F0057B049 /* CoreDataBootcamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B53402142CC16C3F0057B049 /* CoreDataBootcamp.xcdatamodeld */; };
+		B56153DE2CC3BBB700FB9358 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56153DD2CC3BBB700FB9358 /* CoreDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		B53402102CC16C3F0057B049 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B53402122CC16C3F0057B049 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B53402152CC16C3F0057B049 /* CoreDataBootcamp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataBootcamp.xcdatamodel; sourceTree = "<group>"; };
+		B56153DD2CC3BBB700FB9358 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B534020B2CC16C3E0057B049 /* ContentView.swift */,
 				B534020D2CC16C3F0057B049 /* Assets.xcassets */,
 				B53402122CC16C3F0057B049 /* Persistence.swift */,
+				B56153DD2CC3BBB700FB9358 /* CoreDataViewModel.swift */,
 				B53402142CC16C3F0057B049 /* CoreDataBootcamp.xcdatamodeld */,
 				B534020F2CC16C3F0057B049 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56153DE2CC3BBB700FB9358 /* CoreDataViewModel.swift in Sources */,
 				B53402132CC16C3F0057B049 /* Persistence.swift in Sources */,
 				B53402162CC16C3F0057B049 /* CoreDataBootcamp.xcdatamodeld in Sources */,
 				B534020C2CC16C3E0057B049 /* ContentView.swift in Sources */,
